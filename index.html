@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colibri App</title>
+    <link rel="stylesheet" href="/reset.css">
+    <link rel="stylesheet" href="index.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Lobster&family=Manrope&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="header">
+        <img class="logo" src="/logo.png" alt="птичка колибри" srcset="">
+        <h1>COLIBRI</h1>
+    </div>
+    <div class="section_posts">
+        <div class="row">
+            <div class="col">
+                <h2>Новый пост</h2>
+                <input class="js-post-title-input post-title-input"
+                placeholder="Заголовок" 
+                type="text"
+                />
+
+                <textarea class="js-post-text-input post-text-input"
+                    placeholder = 'Напиши пост'
+                    type = 'text'> </textarea>
+            
+            
+                <button class="js-new-post-btn new-post-btn">
+                    Опубликовать
+                </button>
+                <div id="validationMessage" 
+                class="validationMessage validationMessage_hidden">
+                </div>
+            </div>
+            <div class="col">
+                <h2>Лента</h2>
+                <div class="js-posts posts">
+                    Лента пуста ...
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p class="text-on-footer">
+            Создано с душой начинающим разработчиком PavelFzll
+        </p>
+    </div>
+
+    <script src="/index.js"></script>
+    </body>
+</html>
